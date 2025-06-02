@@ -1,0 +1,21 @@
+; Copyright (c) 2025-present Vertex Ludi LTDA
+; See LICENSE file.
+
+[config]
+name="'GoogleSignIn"
+binary="google_signin.xcframework"
+
+initialization="register_google_signin_types"
+deinitialization="unregister_google_signin_types"
+
+[dependencies]
+linked=["AppAuth.framework","AppCheckCore.framework","FBLPromises.framework","GoogleSignIn.framework","GoogleUtilities.framework","GTMAppAuth.framework","GTMSessionFetcher.framework"]
+embedded=["AppAuth.framework","AppCheckCore.framework","FBLPromises.framework","GoogleSignIn.framework","GoogleUtilities.framework","GTMAppAuth.framework","GTMSessionFetcher.framework"]
+system=[]
+
+capabilities=[]
+
+files=[]
+
+[plist]
+

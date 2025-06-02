@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		5E3D00762DEE5AF3009274AC /* Pods_godot_google_signin_ios.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAF5AAC99D32A7AF87A2E9CF /* Pods_godot_google_signin_ios.framework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXCopyFilesBuildPhase section */
 		5E3DBF992DE89DB5009274AC /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
@@ -19,25 +23,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		510B683D4E2E82E168CD1095 /* Pods-godot-google-signin-ios.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-godot-google-signin-ios.release.xcconfig"; path = "Target Support Files/Pods-godot-google-signin-ios/Pods-godot-google-signin-ios.release.xcconfig"; sourceTree = "<group>"; };
+		5E3D00702DEE22AE009274AC /* generate_headers.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = generate_headers.sh; sourceTree = "<group>"; };
+		5E3D00722DEE22AE009274AC /* make_release.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = make_release.sh; sourceTree = "<group>"; };
+		5E3D00732DEE22AE009274AC /* timeout */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = timeout; sourceTree = "<group>"; };
+		5E3D00752DEE31AD009274AC /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		5E3DBF9B2DE89DB5009274AC /* libgodot-google-signin-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libgodot-google-signin-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C02447390DB7149D7F96A1E0 /* Pods-godot-google-signin-ios.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-godot-google-signin-ios.debug.xcconfig"; path = "Target Support Files/Pods-godot-google-signin-ios/Pods-godot-google-signin-ios.debug.xcconfig"; sourceTree = "<group>"; };
+		DAF5AAC99D32A7AF87A2E9CF /* Pods_godot_google_signin_ios.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_godot_google_signin_ios.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
-		5E3DBFA22DE89DB5009274AC /* Exceptions for "godot-google-signin-ios" folder in "Copy Files" phase from "godot-google-signin-ios" target */ = {
-			isa = PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet;
-			buildPhase = 5E3DBF992DE89DB5009274AC /* CopyFiles */;
-			membershipExceptions = (
-				godot_google_signin_ios.h,
-			);
-		};
-/* End PBXFileSystemSynchronizedGroupBuildPhaseMembershipExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		5E3DBF9D2DE89DB5009274AC /* godot-google-signin-ios */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				5E3DBFA22DE89DB5009274AC /* Exceptions for "godot-google-signin-ios" folder in "Copy Files" phase from "godot-google-signin-ios" target */,
-			);
 			path = "godot-google-signin-ios";
 			sourceTree = "<group>";
 		};
@@ -48,17 +46,40 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E3D00762DEE5AF3009274AC /* Pods_godot_google_signin_ios.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2AFB5C459C95D563E2C591EF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DAF5AAC99D32A7AF87A2E9CF /* Pods_godot_google_signin_ios.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E3D00742DEE22AE009274AC /* scripts */ = {
+			isa = PBXGroup;
+			children = (
+				5E3D00702DEE22AE009274AC /* generate_headers.sh */,
+				5E3D00722DEE22AE009274AC /* make_release.sh */,
+				5E3D00732DEE22AE009274AC /* timeout */,
+			);
+			path = scripts;
+			sourceTree = "<group>";
+		};
 		5E3DBF922DE89DB5009274AC = {
 			isa = PBXGroup;
 			children = (
+				5E3D00752DEE31AD009274AC /* README.md */,
 				5E3DBF9D2DE89DB5009274AC /* godot-google-signin-ios */,
+				5E3D00742DEE22AE009274AC /* scripts */,
 				5E3DBF9C2DE89DB5009274AC /* Products */,
+				A47E2CFCDDED4FB70D9279C7 /* Pods */,
+				2AFB5C459C95D563E2C591EF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +91,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A47E2CFCDDED4FB70D9279C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C02447390DB7149D7F96A1E0 /* Pods-godot-google-signin-ios.debug.xcconfig */,
+				510B683D4E2E82E168CD1095 /* Pods-godot-google-signin-ios.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +107,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5E3DBFA52DE89DB5009274AC /* Build configuration list for PBXNativeTarget "godot-google-signin-ios" */;
 			buildPhases = (
+				41241E1B3D475FDB8999CD28 /* [CP] Check Pods Manifest.lock */,
 				5E3DBF972DE89DB5009274AC /* Sources */,
 				5E3DBF982DE89DB5009274AC /* Frameworks */,
 				5E3DBF992DE89DB5009274AC /* CopyFiles */,
@@ -89,8 +120,6 @@
 				5E3DBF9D2DE89DB5009274AC /* godot-google-signin-ios */,
 			);
 			name = "godot-google-signin-ios";
-			packageProductDependencies = (
-			);
 			productName = "godot-google-signin-ios";
 			productReference = 5E3DBF9B2DE89DB5009274AC /* libgodot-google-signin-ios.a */;
 			productType = "com.apple.product-type.library.static";
@@ -127,6 +156,31 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41241E1B3D475FDB8999CD28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-godot-google-signin-ios-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5E3DBF972DE89DB5009274AC /* Sources */ = {
@@ -259,24 +313,75 @@
 		};
 		5E3DBFA62DE89DB5009274AC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C02447390DB7149D7F96A1E0 /* Pods-godot-google-signin-ios.debug.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YWU7BS8N9;
-				OTHER_LDFLAGS = "-ObjC";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/godot/platform/ios",
+					"${PROJECT_DIR}/godot",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LIBRARY_SEARCH_PATHS = (
+					"${PROJECT_DIR}/bin",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = (
+					"-fcxx-modules",
+					"-fmodules",
+					"-DDEBUG_MEMORY_ALLOC",
+					"-DDEBUG=1",
+					"-DDEBUG_ENABLED",
+					"-D_DEBUG",
+					"-DDISABLE_FORCED_INLINE",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		5E3DBFA72DE89DB5009274AC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 510B683D4E2E82E168CD1095 /* Pods-godot-google-signin-ios.release.xcconfig */;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2YWU7BS8N9;
-				OTHER_LDFLAGS = "-ObjC";
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = YES;
+				HEADER_SEARCH_PATHS = (
+					"${PROJECT_DIR}/godot/platform/ios",
+					"${PROJECT_DIR}/godot",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 13;
+				LIBRARY_SEARCH_PATHS = (
+					"${PROJECT_DIR}/bin",
+					"$(inherited)",
+				);
+				OTHER_CFLAGS = (
+					"-fcxx-modules",
+					"-fmodules",
+					"-DNDEBUG",
+					"-DNS_BLOCK_ASSERTIONS=1",
+				);
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"$(inherited)",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
